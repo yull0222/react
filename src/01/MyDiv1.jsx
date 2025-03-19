@@ -9,11 +9,11 @@ export default function MyDiv1() {
 
   return (
     
-    <div className="w-2/3 h-2/3 flex flex-col p-5 justify-center items-center bg-red-300 text-black ">
-      <div className="w-full h-10 flex justify-start items-center" >
-       MyDiv1
+    <div className="flex flex-col items-center justify-center w-2/3 p-5 text-black bg-red-300 h-2/3 ">
+      <div className="flex items-center justify-start w-full h-10" >
+       {div_1}
       </div>
-      <MyDiv2 />
+      <MyDiv2 dn1={div_2} dn2={div_2} dn3={div_3}/>
     </div>
   )
 }

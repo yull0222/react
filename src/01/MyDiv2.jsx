@@ -1,12 +1,12 @@
 import MyDiv3 from "./MyDiv3"
 
-export default function MyDiv2() {
+export default function MyDiv2({dn1, dn2, dn3}) {
   return (
-    <div className="w-3/4 h-3/4 flex-col p-5 m-10  justify-center items-center bg-red-200 text-black">
-      <div className="w-full  flex  flex-col justify-start items-start ">
-        MyDiv2
+    <div className="flex-col items-center justify-center w-3/4 p-5 m-10 text-black bg-red-200 h-3/4">
+      <div className="flex flex-col items-start justify-start w-full ">
+        {`{dn1}>{dn2}`}
       </div>
-      <MyDiv3 />
+      <MyDiv3 d1={dn1} d2={dn2} d3={dn3}/>
     </div>
   )
 }
