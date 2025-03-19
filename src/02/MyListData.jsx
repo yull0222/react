@@ -10,7 +10,7 @@ export default function MyListData() {
 
     
     
-    <div className='grid w-full grid-cols-2 gap-4'>
+    <div className='grid w-10/12 grid-cols-2 gap-4'>
         {tags}
     </div>
   )

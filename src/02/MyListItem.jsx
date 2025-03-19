@@ -1,8 +1,13 @@
 //카드 만들기기
+import { useState } from "react";
 export default function MyListItem({title, img, content}) {
-    let cnt=0;
+    
+    
+    const [cnt, setCnt]=useState(0);
+
+
     const handleClick=()=>{
-        cnt=cnt+1;
+        setCnt(cnt+1)
         console.log('cnt=', cnt);
     }
   return (
@@ -18,7 +23,7 @@ export default function MyListItem({title, img, content}) {
         </div>
 
         <div className="flex items-end justify-center">
-            <span onClick={handleClick}>★</span>
+            <span onClick={handleClick} className="cursor-pointer">★</span>
             <span className="inline-flex mx-2"> 좋아요 </span>
             <span className="inline-flex mx-2"> {cnt}</span>
         </div>
