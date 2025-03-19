@@ -1,7 +1,8 @@
 //import MyListData from "./02/MyListData";
-import Lotto1 from "./03_1/Lotto1";
+import MyClock from "./04/MyClock";
 //import './App.css';
 import { GrFavorite } from "react-icons/gr";
+
 //import MyDiv1 from './01/MyDiv1';
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       </header> 
       
       <main className='flex items-center justify-center w-full overflow-y-auto grow'>
-        <Lotto1/>
+        <MyClock/>
       </main>
       <footer className='flex items-center justify-center'>
         LEE YURI
