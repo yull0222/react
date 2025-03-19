@@ -17,13 +17,15 @@ export default function Lotto() {
         arr.sort((a,b)=>a-b)
 
         let tm=arr.concat(bonus);
+
+        //tm 배열의 각 숫자 요소를 <Ball> 컴포넌트로 변환하는 역할을 합니다.
         tm=tm.map(item=><Ball n={item} key={`b${item}`}/>);
         tm.splice(6,0,<span className="mx-2 text-3xl" key="sp">+</span>);
         setTags(tm);
 
     }
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div className="inline-flex items-center justify-center w-full">
 
         <div>
             {tags}

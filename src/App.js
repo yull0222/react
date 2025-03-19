@@ -1,5 +1,5 @@
 //import MyListData from "./02/MyListData";
-import Lotto from "./03/Lotto";
+import Lotto1 from "./03_1/Lotto1";
 //import './App.css';
 import { GrFavorite } from "react-icons/gr";
 //import MyDiv1 from './01/MyDiv1';
@@ -14,7 +14,7 @@ function App() {
       </header> 
       
       <main className='flex items-center justify-center w-full overflow-y-auto grow'>
-        <Lotto/>
+        <Lotto1/>
       </main>
       <footer className='flex items-center justify-center'>
         LEE YURI
